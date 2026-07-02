@@ -633,10 +633,12 @@ function DrillScreen({ drillState, setDrillState, onFinish, onHome }) {
       });
     }, 1000);
     return () => clearInterval(timerRef.current);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index, timerSeconds]);
 
   useEffect(() => {
     if (submitted) clearInterval(timerRef.current);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [submitted]);
 
   useEffect(() => {
