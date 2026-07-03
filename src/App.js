@@ -435,6 +435,987 @@ const ALL_QUESTIONS = [
     correct: "B",
     explanation: "This is an ad hominem / genetic fallacy. Pointing to a conflict of interest raises doubt but doesn't prove the report is wrong — the argument needs to show the conclusions are actually flawed."
   },
+// ── NEW QUESTIONS 31-100 ──────────────────────────────────────────────────
+  {
+    id: 31, type: "Weaken", difficulty: "Medium",
+    stimulus: "A study found that students who take handwritten notes perform better on exams than those who type their notes on laptops. Therefore, schools should ban laptops in classrooms to improve student performance.",
+    question: "Which of the following, if true, most weakens the argument?",
+    choices: [
+      { label: "A", text: "Students who handwrite notes tend to be more engaged during lectures." },
+      { label: "B", text: "The students who chose to handwrite notes were already higher-achieving students before the study began." },
+      { label: "C", text: "Laptops are expensive and not all students can afford them." },
+      { label: "D", text: "Some students type faster than they write by hand." },
+      { label: "E", text: "The study was conducted across multiple universities." },
+    ],
+    correct: "B",
+    explanation: "If high-achieving students self-selected into handwriting, the study reflects selection bias rather than a causal effect of note-taking method."
+  },
+  {
+    id: 32, type: "Weaken", difficulty: "Hard",
+    stimulus: "A nutritionist argues that the Mediterranean diet is the healthiest diet in the world, pointing to studies showing populations in Mediterranean countries have lower rates of heart disease than populations in Northern Europe.",
+    question: "Which of the following most seriously weakens the nutritionist's conclusion?",
+    choices: [
+      { label: "A", text: "Mediterranean countries have warmer climates than Northern European countries." },
+      { label: "B", text: "Mediterranean populations also have more physically active lifestyles and stronger social bonds, both of which independently reduce heart disease." },
+      { label: "C", text: "The Mediterranean diet is expensive and difficult to maintain outside Mediterranean countries." },
+      { label: "D", text: "Some Mediterranean countries have higher rates of other diseases." },
+      { label: "E", text: "Heart disease is one of the leading causes of death worldwide." },
+    ],
+    correct: "B",
+    explanation: "If lifestyle and social factors also differ between the populations, the diet cannot be isolated as the cause of lower heart disease rates."
+  },
+  {
+    id: 33, type: "Weaken", difficulty: "Easy",
+    stimulus: "The new downtown bike lane has reduced car traffic on Main Street by 15%. We should add bike lanes to all major streets to reduce citywide traffic.",
+    question: "Which of the following most weakens this argument?",
+    choices: [
+      { label: "A", text: "Bike lanes are less expensive to build than new roads." },
+      { label: "B", text: "The reduction in Main Street traffic was accompanied by a 20% increase in traffic on the parallel side streets, suggesting drivers simply rerouted." },
+      { label: "C", text: "Many residents support expanding the bike lane network." },
+      { label: "D", text: "Cyclists do not contribute to air pollution the way cars do." },
+      { label: "E", text: "Main Street has more commercial activity than other streets." },
+    ],
+    correct: "B",
+    explanation: "If traffic simply shifted to other streets, the bike lane reduced traffic on one street without reducing citywide traffic."
+  },
+  {
+    id: 34, type: "Weaken", difficulty: "Hard",
+    stimulus: "Countries that spend more per student on public education consistently produce higher-scoring students on international assessments. Therefore, increasing education spending is the most effective way to improve student outcomes.",
+    question: "Which of the following most weakens the argument?",
+    choices: [
+      { label: "A", text: "Some countries with low education spending still score well on international assessments." },
+      { label: "B", text: "Higher-spending countries tend to be wealthier overall, and student outcomes correlate strongly with family income regardless of school spending." },
+      { label: "C", text: "International assessments do not capture all dimensions of educational quality." },
+      { label: "D", text: "Education spending has increased in most developed countries over the past two decades." },
+      { label: "E", text: "Teacher salaries account for the majority of education spending in most countries." },
+    ],
+    correct: "B",
+    explanation: "If national wealth drives both spending and outcomes, spending may be a byproduct of wealth rather than a cause of better student performance."
+  },
+  {
+    id: 35, type: "Weaken", difficulty: "Medium",
+    stimulus: "Patients at hospitals with more nurses per patient have better recovery outcomes. Hiring more nurses is therefore the key to improving hospital quality.",
+    question: "Which of the following most weakens this conclusion?",
+    choices: [
+      { label: "A", text: "Nurses provide essential direct patient care that doctors cannot always provide." },
+      { label: "B", text: "Better-funded hospitals can afford both more nurses and better equipment, and it may be the equipment driving improved outcomes." },
+      { label: "C", text: "Some hospitals are understaffed due to nursing shortages." },
+      { label: "D", text: "Patient recovery is influenced by many factors beyond hospital care." },
+      { label: "E", text: "Hiring additional nurses increases hospital operating costs." },
+    ],
+    correct: "B",
+    explanation: "If funding drives both nurse hiring and equipment quality, the equipment could be the real cause of better outcomes."
+  },
+  {
+    id: 36, type: "Assumption", difficulty: "Medium",
+    stimulus: "This history textbook was written by a professor at a prestigious university, so it must be accurate and unbiased.",
+    question: "Which of the following is an assumption on which the argument depends?",
+    choices: [
+      { label: "A", text: "Prestigious universities employ only the most qualified professors." },
+      { label: "B", text: "Employment at a prestigious university ensures accuracy and lack of bias in scholarly work." },
+      { label: "C", text: "History textbooks are more likely to be biased than other academic works." },
+      { label: "D", text: "The professor has published other books that were well-received." },
+      { label: "E", text: "Students learn history more effectively from textbooks than from lectures." },
+    ],
+    correct: "B",
+    explanation: "The argument moves from 'prestigious institution' to 'accurate and unbiased' — this only works if institutional prestige guarantees those qualities."
+  },
+  {
+    id: 37, type: "Assumption", difficulty: "Hard",
+    stimulus: "To reduce youth obesity, the city should tax sugary drinks. Studies show that higher prices lead consumers to purchase less of a product.",
+    question: "The argument assumes which of the following?",
+    choices: [
+      { label: "A", text: "Sugary drinks are the primary cause of youth obesity." },
+      { label: "B", text: "Young people will not simply switch to other high-calorie beverages or foods that are equally affordable." },
+      { label: "C", text: "The tax revenue will be used to fund health education programs." },
+      { label: "D", text: "Parents are primarily responsible for children's dietary choices." },
+      { label: "E", text: "Sugary drink consumption has increased among youth in recent years." },
+    ],
+    correct: "B",
+    explanation: "The conclusion requires assuming the reduced consumption is not offset by substituting equally unhealthy alternatives."
+  },
+  {
+    id: 38, type: "Assumption", difficulty: "Easy",
+    stimulus: "Marcus finished the marathon in under three hours. Only elite runners finish marathons in under three hours. Therefore, Marcus must be an elite runner.",
+    question: "Which of the following is assumed by the argument?",
+    choices: [
+      { label: "A", text: "Marcus has been running competitively for many years." },
+      { label: "B", text: "Finishing a marathon in under three hours is not something non-elite runners ever achieve." },
+      { label: "C", text: "Elite runners train more hours per week than recreational runners." },
+      { label: "D", text: "The marathon course Marcus ran was regulation length." },
+      { label: "E", text: "Marcus did not use performance-enhancing substances." },
+    ],
+    correct: "B",
+    explanation: "The argument treats 'only elite runners finish under three hours' as a clean rule — which requires B to hold without exception."
+  },
+  {
+    id: 39, type: "Assumption", difficulty: "Hard",
+    stimulus: "The government should fund basic scientific research because such research has historically led to technological breakthroughs that benefit society.",
+    question: "Which of the following is an assumption underlying this argument?",
+    choices: [
+      { label: "A", text: "Private companies are unwilling to fund basic scientific research." },
+      { label: "B", text: "Government funding of research will continue to produce breakthroughs comparable to those produced historically." },
+      { label: "C", text: "Technological breakthroughs always improve quality of life for all citizens." },
+      { label: "D", text: "Basic research is more valuable than applied research." },
+      { label: "E", text: "The government has sufficient funds to support scientific research." },
+    ],
+    correct: "B",
+    explanation: "The historical track record justifies future funding only if past patterns are expected to continue."
+  },
+  {
+    id: 40, type: "Assumption", difficulty: "Medium",
+    stimulus: "The crime rate in Westville dropped significantly after the city installed streetlights in previously dark neighborhoods. Other cities should install more streetlights to reduce crime.",
+    question: "Which of the following is an assumption the argument depends on?",
+    choices: [
+      { label: "A", text: "Dark streets are the primary cause of crime in all cities." },
+      { label: "B", text: "The conditions that made streetlights effective in Westville exist in other cities as well." },
+      { label: "C", text: "Streetlights are less expensive than other crime prevention measures." },
+      { label: "D", text: "Crime rates have been rising in most cities." },
+      { label: "E", text: "Westville's police department did not also increase patrols during the same period." },
+    ],
+    correct: "B",
+    explanation: "Recommending the same solution for other cities assumes those cities share whatever conditions made streetlights work in Westville."
+  },
+  {
+    id: 41, type: "Must Be True", difficulty: "Medium",
+    stimulus: "Some lawyers are politicians. All politicians are public figures. No private citizen is a public figure.",
+    question: "Which of the following must be true?",
+    choices: [
+      { label: "A", text: "All lawyers are public figures." },
+      { label: "B", text: "Some lawyers are not private citizens." },
+      { label: "C", text: "All public figures are politicians." },
+      { label: "D", text: "No lawyers are private citizens." },
+      { label: "E", text: "Some politicians are lawyers." },
+    ],
+    correct: "B",
+    explanation: "Some lawyers are politicians, those lawyers are public figures, and public figures are not private citizens — so some lawyers are not private citizens."
+  },
+  {
+    id: 42, type: "Must Be True", difficulty: "Hard",
+    stimulus: "Every applicant who passed the written exam was invited to interview. Several applicants who were invited to interview did not receive job offers. All applicants who received job offers had passed the written exam.",
+    question: "Which of the following must be true?",
+    choices: [
+      { label: "A", text: "Every applicant who passed the written exam received a job offer." },
+      { label: "B", text: "Some applicants who passed the written exam did not receive job offers." },
+      { label: "C", text: "No applicant received a job offer without being invited to interview." },
+      { label: "D", text: "Most applicants who interviewed were rejected." },
+      { label: "E", text: "Passing the written exam is sufficient to receive a job offer." },
+    ],
+    correct: "C",
+    explanation: "All job offer recipients passed the exam and were therefore invited to interview. So no one got a job offer without being interviewed. C must be true."
+  },
+  {
+    id: 43, type: "Must Be True", difficulty: "Medium",
+    stimulus: "All of the red marbles in the bag are large. Some of the large marbles in the bag are heavy. None of the heavy marbles are blue.",
+    question: "Which of the following must be true?",
+    choices: [
+      { label: "A", text: "All red marbles are heavy." },
+      { label: "B", text: "Some large marbles are red." },
+      { label: "C", text: "No large marbles are blue." },
+      { label: "D", text: "No red marbles are blue." },
+      { label: "E", text: "Some heavy marbles are red." },
+    ],
+    correct: "B",
+    explanation: "All red marbles are large — so the group of large marbles must contain all the red ones. Therefore some large marbles are red."
+  },
+  {
+    id: 44, type: "Must Be True", difficulty: "Hard",
+    stimulus: "No chef at the restaurant has fewer than five years of experience. All chefs with more than ten years of experience have won at least one award. Some chefs at the restaurant have won awards.",
+    question: "Which of the following must also be true?",
+    choices: [
+      { label: "A", text: "All chefs at the restaurant have won awards." },
+      { label: "B", text: "Some chefs at the restaurant have more than ten years of experience." },
+      { label: "C", text: "Every chef who has won an award has more than ten years of experience." },
+      { label: "D", text: "All chefs with five years of experience have won awards." },
+      { label: "E", text: "No chef with exactly five years of experience has won an award." },
+    ],
+    correct: "B",
+    explanation: "Some chefs at the restaurant have won awards. Since awards require 10+ years of experience, some chefs must have more than ten years."
+  },
+  {
+    id: 45, type: "Flaw", difficulty: "Easy",
+    stimulus: "We should not listen to Senator Kim's proposal to increase the minimum wage. She has received substantial donations from labor unions, so she clearly cannot be trusted to give unbiased economic advice.",
+    question: "The argument is flawed because it:",
+    choices: [
+      { label: "A", text: "Fails to consider the economic evidence for raising the minimum wage." },
+      { label: "B", text: "Attacks the senator's character rather than addressing the merits of her proposal." },
+      { label: "C", text: "Assumes that labor unions always act in the public interest." },
+      { label: "D", text: "Overgeneralizes from one politician's behavior to all politicians." },
+      { label: "E", text: "Confuses correlation with causation." },
+    ],
+    correct: "B",
+    explanation: "This is an ad hominem attack — the argument dismisses the proposal by attacking the proposer's motives rather than engaging with the substance."
+  },
+  {
+    id: 46, type: "Flaw", difficulty: "Medium",
+    stimulus: "Either we invest heavily in renewable energy now, or we will face catastrophic climate change within 50 years. Since investing heavily in renewable energy is too expensive, we must accept that catastrophic climate change is inevitable.",
+    question: "The argument above is flawed because it:",
+    choices: [
+      { label: "A", text: "Assumes that climate change is caused entirely by energy production." },
+      { label: "B", text: "Presents only two options when other alternatives may exist." },
+      { label: "C", text: "Relies on a prediction that cannot be verified." },
+      { label: "D", text: "Fails to define what counts as catastrophic climate change." },
+      { label: "E", text: "Assumes that cost is the only relevant factor in energy policy." },
+    ],
+    correct: "B",
+    explanation: "This is a false dilemma — the argument ignores middle-ground alternatives like moderate investment, efficiency measures, or carbon capture."
+  },
+  {
+    id: 47, type: "Flaw", difficulty: "Hard",
+    stimulus: "In a survey, 80% of people who regularly attend religious services reported being happy with their lives. Therefore, attending religious services causes people to be happier.",
+    question: "The argument is most vulnerable to criticism because it:",
+    choices: [
+      { label: "A", text: "Uses a sample that may not be representative of the general population." },
+      { label: "B", text: "Treats self-reported happiness as equivalent to objective wellbeing." },
+      { label: "C", text: "Concludes that correlation implies causation without ruling out alternative explanations." },
+      { label: "D", text: "Ignores the happiness levels of people who attend services but report being unhappy." },
+      { label: "E", text: "Relies on a survey rather than a controlled experiment." },
+    ],
+    correct: "C",
+    explanation: "The correlation between service attendance and happiness could be explained multiple ways — happier people may be more likely to attend services, or a third factor may drive both."
+  },
+  {
+    id: 48, type: "Flaw", difficulty: "Medium",
+    stimulus: "The ancient Romans had a sophisticated legal system, advanced engineering, and a complex economy. Modern Western civilization also has these features. Therefore, modern Western civilization must be descended from Roman civilization.",
+    question: "The argument is flawed because it:",
+    choices: [
+      { label: "A", text: "Fails to consider that Roman civilization eventually collapsed." },
+      { label: "B", text: "Assumes that sharing characteristics proves a direct lineage rather than independent development." },
+      { label: "C", text: "Overstates the sophistication of Roman engineering." },
+      { label: "D", text: "Ignores other ancient civilizations that had similar features." },
+      { label: "E", text: "Conflates legal systems with cultural identity." },
+    ],
+    correct: "B",
+    explanation: "Similar features do not prove descent — civilizations can independently develop similar institutions without one causing the other."
+  },
+  {
+    id: 49, type: "Strengthen", difficulty: "Easy",
+    stimulus: "The mayor claims that the new public transit expansion will reduce downtown traffic congestion.",
+    question: "Which of the following most strengthens this claim?",
+    choices: [
+      { label: "A", text: "The transit expansion will add 12 new bus routes connecting residential neighborhoods directly to the downtown core." },
+      { label: "B", text: "Public transit expansions are popular with environmental advocacy groups." },
+      { label: "C", text: "The city has a history of completing infrastructure projects on time." },
+      { label: "D", text: "Traffic congestion costs the city millions of dollars annually in lost productivity." },
+      { label: "E", text: "The transit expansion has bipartisan political support." },
+    ],
+    correct: "A",
+    explanation: "New routes connecting residential areas to downtown give commuters a viable alternative to driving, directly supporting the claim that congestion will decrease."
+  },
+  {
+    id: 50, type: "Strengthen", difficulty: "Medium",
+    stimulus: "A school district argues that its new reading intervention program improved literacy among struggling third-graders.",
+    question: "Which of the following most strengthens the district's argument?",
+    choices: [
+      { label: "A", text: "The program was developed by experienced literacy specialists." },
+      { label: "B", text: "Third-graders in a comparable district without the program showed no improvement in literacy over the same period." },
+      { label: "C", text: "Teachers in the district received training on how to implement the program." },
+      { label: "D", text: "The program has received positive media coverage." },
+      { label: "E", text: "Literacy rates among third-graders have been declining nationally." },
+    ],
+    correct: "B",
+    explanation: "A comparison group that showed no improvement isolates the program as the cause of improvement, ruling out natural maturation or other factors."
+  },
+  {
+    id: 51, type: "Strengthen", difficulty: "Hard",
+    stimulus: "Researchers claim that a newly discovered enzyme can break down microplastics in ocean water, potentially offering a solution to plastic pollution.",
+    question: "Which of the following most strengthens the researchers' claim?",
+    choices: [
+      { label: "A", text: "Microplastic pollution is one of the most pressing environmental problems facing the world's oceans." },
+      { label: "B", text: "In controlled laboratory tests, the enzyme broke down 90% of microplastic samples within 48 hours without producing harmful byproducts." },
+      { label: "C", text: "The enzyme was discovered in bacteria living near a plastic recycling facility." },
+      { label: "D", text: "Several environmental organizations have expressed interest in funding further research." },
+      { label: "E", text: "Current methods of removing microplastics from ocean water are expensive and inefficient." },
+    ],
+    correct: "B",
+    explanation: "Controlled lab results showing high effectiveness and safety directly support the claim that the enzyme can break down microplastics."
+  },
+  {
+    id: 52, type: "Strengthen", difficulty: "Medium",
+    stimulus: "An economist argues that raising the federal minimum wage will not significantly increase unemployment.",
+    question: "Which of the following most strengthens this argument?",
+    choices: [
+      { label: "A", text: "Most minimum wage workers are employed in service industries." },
+      { label: "B", text: "Studies of past minimum wage increases found no statistically significant increase in unemployment in states that raised their wages compared to neighboring states that did not." },
+      { label: "C", text: "The current federal minimum wage has not been raised in over a decade." },
+      { label: "D", text: "Labor unions support raising the minimum wage." },
+      { label: "E", text: "Many economists disagree about the effects of minimum wage increases." },
+    ],
+    correct: "B",
+    explanation: "Historical evidence from natural experiments directly supports the claim that employment effects are minimal."
+  },
+  {
+    id: 53, type: "Parallel Reasoning", difficulty: "Easy",
+    stimulus: "All birds have feathers. Penguins are birds. Therefore, penguins have feathers.",
+    question: "Which of the following most closely parallels the reasoning above?",
+    choices: [
+      { label: "A", text: "All fish live in water. Dolphins live in water. Therefore, dolphins are fish." },
+      { label: "B", text: "All mammals are warm-blooded. Whales are mammals. Therefore, whales are warm-blooded." },
+      { label: "C", text: "Some reptiles are dangerous. Crocodiles are reptiles. Therefore, crocodiles are dangerous." },
+      { label: "D", text: "All cats are mammals. Some mammals are large. Therefore, some cats are large." },
+      { label: "E", text: "No insects are mammals. Spiders are not insects. Therefore, spiders are mammals." },
+    ],
+    correct: "B",
+    explanation: "All A are B; C is A; therefore C is B. Only B follows this exact valid syllogism structure."
+  },
+  {
+    id: 54, type: "Parallel Reasoning", difficulty: "Hard",
+    stimulus: "The committee will approve the proposal only if both the budget and the timeline are acceptable. The timeline is not acceptable. Therefore, the committee will not approve the proposal.",
+    question: "Which of the following most closely parallels this reasoning?",
+    choices: [
+      { label: "A", text: "The engine will start only if it has fuel and a working battery. The battery is dead. Therefore, the engine will not start." },
+      { label: "B", text: "The team will win only if they score more points than the opponent. They scored fewer points. Therefore, they lost." },
+      { label: "C", text: "The package will arrive on time only if it is shipped today. It was shipped today. Therefore, it will arrive on time." },
+      { label: "D", text: "You will get the job only if you interview well. You interviewed poorly. Therefore, you will not get the job." },
+      { label: "E", text: "The project will succeed if the team works hard and has sufficient resources. The team worked hard. Therefore, the project will succeed." },
+    ],
+    correct: "A",
+    explanation: "The original requires both conditions; one fails; therefore the outcome fails. A matches: both fuel AND battery needed; battery fails; engine will not start."
+  },
+  {
+    id: 55, type: "Resolve the Paradox", difficulty: "Easy",
+    stimulus: "A major airline reduced its ticket prices by 30% but saw its total revenue increase over the following year.",
+    question: "Which of the following best resolves this apparent paradox?",
+    choices: [
+      { label: "A", text: "The airline also reduced its operating costs during the same period." },
+      { label: "B", text: "The lower prices attracted so many new passengers that the increase in volume more than offset the lower price per ticket." },
+      { label: "C", text: "Other airlines did not reduce their prices during the same period." },
+      { label: "D", text: "The airline added several new international routes during the year." },
+      { label: "E", text: "Fuel prices decreased during the same period." },
+    ],
+    correct: "B",
+    explanation: "Price elasticity — if demand increases enough in response to lower prices, total revenue (price times quantity) can still rise."
+  },
+  {
+    id: 56, type: "Resolve the Paradox", difficulty: "Medium",
+    stimulus: "Eating breakfast has been shown to improve concentration. Yet students at Northfield Academy who eat breakfast in the school cafeteria consistently score lower on morning exams than students who skip breakfast.",
+    question: "Which of the following best explains this paradox?",
+    choices: [
+      { label: "A", text: "The school cafeteria serves high-sugar, low-nutrient options that cause energy crashes before exams." },
+      { label: "B", text: "Some students at Northfield eat breakfast at home rather than at school." },
+      { label: "C", text: "Morning exams are more difficult than afternoon exams at Northfield." },
+      { label: "D", text: "Students who skip breakfast tend to go to sleep earlier the night before." },
+      { label: "E", text: "The school cafeteria is noisy and crowded, causing stress before exams." },
+    ],
+    correct: "A",
+    explanation: "If cafeteria food is poor quality, it explains why cafeteria breakfast specifically hurts performance — not all breakfasts are equal."
+  },
+  {
+    id: 57, type: "Resolve the Paradox", difficulty: "Hard",
+    stimulus: "A country enacted strict gun control laws, and gun violence decreased. However, overall violent crime increased during the same period.",
+    question: "Which of the following best resolves this apparent paradox?",
+    choices: [
+      { label: "A", text: "Gun control laws are controversial and opposed by many citizens." },
+      { label: "B", text: "Criminals who could no longer obtain guns turned to other weapons, leading to an increase in non-gun violent crime that exceeded the decrease in gun violence." },
+      { label: "C", text: "The gun control laws were difficult to enforce in rural areas." },
+      { label: "D", text: "Overall crime rates are influenced by many social and economic factors." },
+      { label: "E", text: "Other countries with strict gun laws have lower overall violent crime rates." },
+    ],
+    correct: "B",
+    explanation: "Weapon substitution — reduced gun violence offset by increased non-gun violence — explains why overall violent crime rose even as gun violence fell."
+  },
+  {
+    id: 58, type: "Inference", difficulty: "Medium",
+    stimulus: "The Alderton Bridge was built in 1887 and has never been structurally reinforced. Engineering standards require that any bridge over 100 years old that has not been reinforced be inspected annually. The Alderton Bridge was last inspected in 2019.",
+    question: "Which of the following can be properly inferred?",
+    choices: [
+      { label: "A", text: "The Alderton Bridge is structurally unsafe." },
+      { label: "B", text: "The Alderton Bridge is not in compliance with current engineering inspection standards." },
+      { label: "C", text: "The bridge will need to be demolished within the next decade." },
+      { label: "D", text: "The agency responsible for the bridge has been negligent." },
+      { label: "E", text: "Bridges built before 1900 are more dangerous than those built afterward." },
+    ],
+    correct: "B",
+    explanation: "The bridge is over 100 years old and unreinforced, requiring annual inspection. Last inspected in 2019 means it has not been inspected annually — it is out of compliance."
+  },
+  {
+    id: 59, type: "Inference", difficulty: "Easy",
+    stimulus: "All of the paintings in the Harwick Gallery are either oil paintings or watercolors. None of the watercolors in the gallery were painted before 1900. The gallery contains several paintings from the 1800s.",
+    question: "Which of the following can be properly inferred?",
+    choices: [
+      { label: "A", text: "All paintings from the 1800s in the gallery are oil paintings." },
+      { label: "B", text: "The gallery specializes in 19th century art." },
+      { label: "C", text: "Watercolor painting was not practiced before 1900." },
+      { label: "D", text: "Oil paintings are more valuable than watercolors." },
+      { label: "E", text: "The gallery owns more oil paintings than watercolors." },
+    ],
+    correct: "A",
+    explanation: "Paintings are either oil or watercolor; watercolors are all post-1900; therefore the 1800s paintings must all be oil paintings."
+  },
+  {
+    id: 60, type: "Inference", difficulty: "Hard",
+    stimulus: "Economists studying the gig economy found that gig workers earn less per hour on average than traditionally employed workers in comparable roles, once expenses are accounted for. However, gig workers consistently report higher job satisfaction than traditionally employed workers.",
+    question: "Which of the following is most strongly supported by the passage?",
+    choices: [
+      { label: "A", text: "Most workers prefer higher job satisfaction to higher pay." },
+      { label: "B", text: "Gig work is economically superior to traditional employment for most workers." },
+      { label: "C", text: "Job satisfaction and hourly compensation are not always correlated." },
+      { label: "D", text: "Traditional employers should offer more flexibility to compete with the gig economy." },
+      { label: "E", text: "Gig workers are unaware of how much less they earn than traditionally employed workers." },
+    ],
+    correct: "C",
+    explanation: "The passage shows gig workers earn less but report higher satisfaction — directly demonstrating that pay and satisfaction do not always move together."
+  },
+  {
+    id: 61, type: "Main Point", difficulty: "Hard",
+    stimulus: "Critics argue that social media companies should be held legally liable for harmful user content. However, this would require proactive censorship at massive scale — technically impossible and a threat to free expression. A better approach would be requiring transparency about moderation practices so users can make informed platform choices.",
+    question: "Which of the following best expresses the main point?",
+    choices: [
+      { label: "A", text: "Social media companies currently do not do enough to moderate harmful content." },
+      { label: "B", text: "Legal liability for user content is technically impossible to implement." },
+      { label: "C", text: "Rather than imposing liability, policymakers should require platforms to be transparent about their moderation practices." },
+      { label: "D", text: "Free expression should never be restricted by social media companies." },
+      { label: "E", text: "Users are ultimately responsible for the content they post on social media." },
+    ],
+    correct: "C",
+    explanation: "The passage argues against liability and proposes transparency as an alternative — C captures both the rejection of one approach and the advocacy for another."
+  },
+  {
+    id: 62, type: "Main Point", difficulty: "Medium",
+    stimulus: "Many parents enroll their children in intensive tutoring to boost college admission prospects. While tutoring can improve test scores, admissions officers at selective universities increasingly value intellectual curiosity, resilience, and authentic passion — qualities tutoring cannot provide. Parents may therefore be investing in the wrong kind of preparation.",
+    question: "The main point of the passage is that:",
+    choices: [
+      { label: "A", text: "Tutoring programs are ineffective at raising test scores." },
+      { label: "B", text: "Selective universities should place less emphasis on test scores in admissions." },
+      { label: "C", text: "Parents focused on tutoring may be neglecting preparation that matters more for selective college admissions." },
+      { label: "D", text: "Intellectual curiosity cannot be developed through any formal program." },
+      { label: "E", text: "College admissions processes are unfair to students who cannot afford tutoring." },
+    ],
+    correct: "C",
+    explanation: "The passage acknowledges tutoring works for scores but argues the qualities that matter most for admissions are not what tutoring provides."
+  },
+  {
+    id: 63, type: "Evaluate", difficulty: "Medium",
+    stimulus: "A city council member argues that planting more trees in urban neighborhoods will significantly reduce violent crime rates, citing studies showing that neighborhoods with more green space have lower crime rates.",
+    question: "Which of the following would be most useful in evaluating this argument?",
+    choices: [
+      { label: "A", text: "How much it costs to plant and maintain urban trees." },
+      { label: "B", text: "Whether neighborhoods with more green space differ from others in ways that independently reduce crime, such as higher income levels." },
+      { label: "C", text: "What types of trees are most effective at reducing urban heat." },
+      { label: "D", text: "Whether the city council member has a background in urban planning." },
+      { label: "E", text: "How many other cities have implemented similar tree-planting programs." },
+    ],
+    correct: "B",
+    explanation: "The argument assumes green space causes lower crime, but if greener neighborhoods differ in other crime-reducing ways, the trees may not be the operative factor."
+  },
+  {
+    id: 64, type: "Evaluate", difficulty: "Hard",
+    stimulus: "A tech company claims its AI-powered hiring tool reduces racial bias in candidate screening by removing names and photos from applications. Therefore, candidates selected by the tool will be chosen purely on merit.",
+    question: "Which of the following would be most important to know in evaluating this claim?",
+    choices: [
+      { label: "A", text: "Whether the company's human HR team also reviews applications after the AI screens them." },
+      { label: "B", text: "Whether the AI was trained on historical hiring data that may itself reflect past discriminatory practices." },
+      { label: "C", text: "How many candidates the tool screens per month." },
+      { label: "D", text: "Whether applicants are informed that an AI is screening their applications." },
+      { label: "E", text: "What percentage of the company's current workforce belongs to minority groups." },
+    ],
+    correct: "B",
+    explanation: "If the AI learned from biased historical data, it may replicate those biases through proxies even without names and photos."
+  },
+  {
+    id: 65, type: "Principle", difficulty: "Easy",
+    stimulus: "A company should only advertise a product as new and improved if the product has undergone a substantive change that meaningfully benefits consumers, not merely a change in packaging or branding.",
+    question: "Which of the following best conforms to this principle?",
+    choices: [
+      { label: "A", text: "A cereal brand redesigns its box with brighter colors and labels it new and improved." },
+      { label: "B", text: "A shampoo company changes its bottle shape and advertises the product as new and improved." },
+      { label: "C", text: "A pain reliever brand adds a faster-dissolving formula that reaches the bloodstream 30% quicker and labels it new and improved." },
+      { label: "D", text: "A beverage company changes its logo and calls its drink new and improved." },
+      { label: "E", text: "A detergent brand changes its scent without testing whether consumers prefer it and markets it as new and improved." },
+    ],
+    correct: "C",
+    explanation: "Only C involves a substantive change — faster absorption — that meaningfully benefits consumers, satisfying both conditions of the principle."
+  },
+  {
+    id: 66, type: "Principle", difficulty: "Hard",
+    stimulus: "A government is justified in restricting individual freedoms only when doing so prevents clear and direct harm to others, and only to the extent necessary to prevent that harm.",
+    question: "Which of the following government actions is most consistent with this principle?",
+    choices: [
+      { label: "A", text: "Banning all alcohol consumption because drunk driving causes accidents that harm others." },
+      { label: "B", text: "Requiring motorcyclists to wear helmets to protect themselves from injury." },
+      { label: "C", text: "Requiring restaurants to display calorie counts so consumers can make informed choices." },
+      { label: "D", text: "Mandating that drivers stop at red lights to prevent collisions with other drivers and pedestrians." },
+      { label: "E", text: "Prohibiting citizens from owning dogs because some dogs have bitten strangers." },
+    ],
+    correct: "D",
+    explanation: "Traffic signals prevent direct harm to others and the restriction is limited to what is necessary. A and E go beyond what is necessary; B protects the individual rather than others."
+  },
+  {
+    id: 67, type: "Method of Reasoning", difficulty: "Easy",
+    stimulus: "Professor: You claim the university should eliminate required courses because students learn better when they choose their own curriculum. But last semester you argued that structure and requirements are essential for academic rigor. Your current position directly contradicts your earlier one.",
+    question: "The professor's response proceeds by:",
+    choices: [
+      { label: "A", text: "Providing empirical evidence that required courses improve learning outcomes." },
+      { label: "B", text: "Pointing out that the student's current position is inconsistent with a position the student previously held." },
+      { label: "C", text: "Appealing to the authority of educational research." },
+      { label: "D", text: "Demonstrating that the student's conclusion leads to an unacceptable outcome." },
+      { label: "E", text: "Questioning whether the student has sufficient knowledge of curriculum design." },
+    ],
+    correct: "B",
+    explanation: "The professor identifies a contradiction between the student's current and past positions — an inconsistency attack."
+  },
+  {
+    id: 68, type: "Method of Reasoning", difficulty: "Medium",
+    stimulus: "Advocate: We must ban single-use plastics immediately. Every year, millions of tons of plastic enter the ocean, killing marine life and entering the food chain. We have already lost decades to inaction, and each year of delay causes irreversible damage to marine ecosystems.",
+    question: "The advocate's argument relies primarily on which method?",
+    choices: [
+      { label: "A", text: "Citing scientific consensus to establish the credibility of the claim." },
+      { label: "B", text: "Using the urgency and irreversibility of the harm to argue for immediate action." },
+      { label: "C", text: "Proposing a specific alternative to single-use plastics." },
+      { label: "D", text: "Appealing to the economic costs of plastic pollution." },
+      { label: "E", text: "Comparing the current situation to a historical precedent." },
+    ],
+    correct: "B",
+    explanation: "The argument's force comes from emphasizing irreversible ongoing harm and lost time — using urgency as the primary reason for immediate action."
+  },
+  {
+    id: 69, type: "Flaw", difficulty: "Medium",
+    stimulus: "No true patriot would ever criticize their country's government. Since journalist Elena Vasquez has written several critical articles about government policy, she is clearly not a true patriot.",
+    question: "The argument above is most vulnerable to which criticism?",
+    choices: [
+      { label: "A", text: "It defines true patriot in a way that excludes legitimate expressions of civic engagement." },
+      { label: "B", text: "It fails to consider whether Elena Vasquez's criticism is accurate." },
+      { label: "C", text: "It assumes that journalism is inherently biased against governments." },
+      { label: "D", text: "It overgeneralizes from one journalist's behavior to all journalists." },
+      { label: "E", text: "It confuses patriotism with nationalism." },
+    ],
+    correct: "A",
+    explanation: "This is the No True Scotsman fallacy — defining true patriot to automatically exclude anyone who criticizes the government makes the claim unfalsifiable and circular."
+  },
+  {
+    id: 70, type: "Strengthen", difficulty: "Hard",
+    stimulus: "A conservation group argues that reintroducing wolves into Yellowstone National Park improved the overall health of the park's ecosystem, not just wolf population numbers.",
+    question: "Which of the following most strengthens this argument?",
+    choices: [
+      { label: "A", text: "Wolf populations in Yellowstone have grown steadily since reintroduction." },
+      { label: "B", text: "After wolf reintroduction, elk herds changed their grazing behavior, allowing riverbank vegetation to recover, which reduced erosion and improved water quality for fish populations." },
+      { label: "C", text: "Conservation groups in other countries have also advocated for wolf reintroduction." },
+      { label: "D", text: "Wolves were a natural part of Yellowstone's ecosystem before being hunted to extinction in the area." },
+      { label: "E", text: "Visitors to Yellowstone reported more wolf sightings after reintroduction." },
+    ],
+    correct: "B",
+    explanation: "B describes a cascade of ecosystem improvements — affecting elk behavior, vegetation, erosion, and fish — directly supporting the claim of broad ecosystem health improvement."
+  },
+  {
+    id: 71, type: "Weaken", difficulty: "Hard",
+    stimulus: "Since the introduction of smartphones, rates of depression and anxiety among teenagers have increased significantly. Smartphones must therefore be causing the rise in teenage mental health problems.",
+    question: "Which of the following most seriously weakens this argument?",
+    choices: [
+      { label: "A", text: "Not all teenagers who own smartphones report feeling depressed or anxious." },
+      { label: "B", text: "Awareness and diagnosis of depression and anxiety have also increased significantly during the same period, which could account for higher reported rates." },
+      { label: "C", text: "Teenagers spend an average of seven hours per day on their smartphones." },
+      { label: "D", text: "Social media platforms allow for cyberbullying." },
+      { label: "E", text: "Several studies have linked smartphone use to disrupted sleep patterns." },
+    ],
+    correct: "B",
+    explanation: "If better awareness and diagnosis explain the increase in reported rates, smartphones may not be causing a real rise in mental illness."
+  },
+  {
+    id: 72, type: "Assumption", difficulty: "Medium",
+    stimulus: "Because organic produce is grown without synthetic pesticides, it is healthier for consumers than conventionally grown produce.",
+    question: "The argument above assumes which of the following?",
+    choices: [
+      { label: "A", text: "Organic farming is better for the environment than conventional farming." },
+      { label: "B", text: "The absence of synthetic pesticides is sufficient to make produce meaningfully healthier for consumers." },
+      { label: "C", text: "Consumers can reliably distinguish organic from conventional produce." },
+      { label: "D", text: "Organic produce costs more to produce than conventional produce." },
+      { label: "E", text: "Synthetic pesticides were not used in agriculture before the 20th century." },
+    ],
+    correct: "B",
+    explanation: "The argument leaps from no synthetic pesticides to healthier — this requires assuming pesticide absence alone is enough to confer meaningful health benefits."
+  },
+  {
+    id: 73, type: "Inference", difficulty: "Medium",
+    stimulus: "Every painting in the museum's permanent collection was either donated by a private collector or purchased with public funds. The museum's most famous painting was not purchased with public funds. The museum has never accepted anonymous donations.",
+    question: "Which of the following can be properly inferred?",
+    choices: [
+      { label: "A", text: "The famous painting was donated by an identified private collector." },
+      { label: "B", text: "Most of the museum's collection was donated rather than purchased." },
+      { label: "C", text: "The famous painting is the most valuable in the collection." },
+      { label: "D", text: "The museum prefers donations to purchases." },
+      { label: "E", text: "Private collectors donate paintings to museums for tax benefits." },
+    ],
+    correct: "A",
+    explanation: "The painting is in the permanent collection, so it was either donated or purchased with public funds. Not purchased means donated. No anonymous donations means the donor is identified."
+  },
+  {
+    id: 74, type: "Resolve the Paradox", difficulty: "Medium",
+    stimulus: "Studies show that people who live near airports report higher rates of sleep disturbance due to noise. Yet residents living closest to the airport report the fewest sleep disturbances of all groups studied.",
+    question: "Which of the following best resolves this paradox?",
+    choices: [
+      { label: "A", text: "Airport noise is loudest during daytime hours when most people are awake." },
+      { label: "B", text: "Residents living closest to the airport have lived there the longest and have habituated to the noise over time." },
+      { label: "C", text: "Airport noise levels have decreased over the past decade due to quieter aircraft." },
+      { label: "D", text: "Real estate near airports is significantly cheaper, attracting lower-income residents." },
+      { label: "E", text: "Some residents near airports use white noise machines to help them sleep." },
+    ],
+    correct: "B",
+    explanation: "Habituation — getting used to chronic noise over time — explains why long-term residents closest to the airport are least disturbed."
+  },
+  {
+    id: 75, type: "Principle", difficulty: "Medium",
+    stimulus: "A doctor should always prioritize the long-term health of the patient over immediate comfort, except when the patient is fully informed and competently refuses a recommended treatment.",
+    question: "Which of the following situations violates this principle?",
+    choices: [
+      { label: "A", text: "A doctor prescribes a painful but effective cancer treatment to a patient who has been fully informed and agrees." },
+      { label: "B", text: "A doctor administers a sedative to a fully informed, competent patient who has refused pain management, overriding the refusal to spare the patient discomfort." },
+      { label: "C", text: "A doctor recommends surgery to a patient and proceeds after the patient provides informed consent." },
+      { label: "D", text: "A doctor declines to prescribe addictive painkillers for long-term use despite a patient's request, citing long-term health risks." },
+      { label: "E", text: "A doctor informs a patient of all risks before the patient decides to decline a recommended procedure." },
+    ],
+    correct: "B",
+    explanation: "B violates the principle because the patient is fully informed and competently refused — the exception applies, and the doctor must respect the refusal."
+  },
+  {
+    id: 76, type: "Must Be True", difficulty: "Medium",
+    stimulus: "If the interest rate rises, housing prices will fall. If housing prices fall, construction activity will slow. Interest rates rose last quarter.",
+    question: "Which of the following must be true?",
+    choices: [
+      { label: "A", text: "Construction activity slowed last quarter." },
+      { label: "B", text: "Housing prices will continue to fall next quarter." },
+      { label: "C", text: "Construction activity will slow." },
+      { label: "D", text: "Rising interest rates always harm the economy." },
+      { label: "E", text: "Housing prices fell last quarter." },
+    ],
+    correct: "C",
+    explanation: "Interest rates rose, so housing prices will fall, so construction activity will slow. C follows necessarily from the chain of conditionals."
+  },
+  {
+    id: 77, type: "Flaw", difficulty: "Hard",
+    stimulus: "Over the past century, as the number of hospitals has increased, life expectancy has also increased. Therefore, building more hospitals is the primary driver of increased life expectancy.",
+    question: "The argument is most vulnerable to which criticism?",
+    choices: [
+      { label: "A", text: "It ignores the role of individual lifestyle choices in determining life expectancy." },
+      { label: "B", text: "It assumes that two simultaneous trends must be causally related, without ruling out that both are products of broader improvements in living standards and medical knowledge." },
+      { label: "C", text: "It fails to account for differences in life expectancy across different countries." },
+      { label: "D", text: "It relies on data from too short a time period." },
+      { label: "E", text: "It confuses the number of hospitals with the quality of healthcare provided." },
+    ],
+    correct: "B",
+    explanation: "Both hospital growth and life expectancy could be effects of the same underlying cause — improved living standards — rather than one causing the other."
+  },
+  {
+    id: 78, type: "Evaluate", difficulty: "Medium",
+    stimulus: "A fitness app company claims its app causes users to exercise more frequently, based on data showing that app users exercise an average of four days per week.",
+    question: "Which of the following would be most useful in evaluating this claim?",
+    choices: [
+      { label: "A", text: "The average age of the app's users." },
+      { label: "B", text: "How frequently the app's users exercised before downloading the app." },
+      { label: "C", text: "How many users have downloaded the app." },
+      { label: "D", text: "Whether the app offers premium subscription features." },
+      { label: "E", text: "What types of exercises the app recommends." },
+    ],
+    correct: "B",
+    explanation: "Without knowing how much users exercised before the app, we cannot know if the app changed their behavior at all."
+  },
+  {
+    id: 79, type: "Parallel Reasoning", difficulty: "Medium",
+    stimulus: "Some of the students in the class passed the exam. All students who passed the exam attended every lecture. Therefore, some students who attended every lecture passed the exam.",
+    question: "Which of the following has the same logical structure?",
+    choices: [
+      { label: "A", text: "Some athletes won medals. All medal winners trained daily. Therefore, some athletes who trained daily won medals." },
+      { label: "B", text: "All runners finished the race. Some runners trained for six months. Therefore, some who trained for six months finished the race." },
+      { label: "C", text: "No students failed the test. All students studied. Therefore, studying causes students to pass." },
+      { label: "D", text: "Some doctors are researchers. All researchers publish papers. Therefore, all doctors publish papers." },
+      { label: "E", text: "All chefs cook professionally. Some cooks are not chefs. Therefore, some professionals are not chefs." },
+    ],
+    correct: "A",
+    explanation: "Some X are Y; all Y are Z; therefore some Z are X. Only A follows this exact structure."
+  },
+  {
+    id: 80, type: "Main Point", difficulty: "Hard",
+    stimulus: "Proponents of universal basic income argue it would reduce poverty and give workers bargaining power. Critics counter it would discourage work and be fiscally unsustainable. Both sides, however, are speculating based on small pilot programs that differ significantly from a true universal policy. Until a large-scale, long-term trial is conducted, neither side can make confident empirical claims.",
+    question: "The main point of the passage is that:",
+    choices: [
+      { label: "A", text: "Universal basic income would reduce poverty if implemented correctly." },
+      { label: "B", text: "The fiscal costs of universal basic income make it impractical." },
+      { label: "C", text: "The existing evidence base is insufficient to support confident claims about universal basic income's effects." },
+      { label: "D", text: "Pilot programs are never useful for evaluating large-scale policies." },
+      { label: "E", text: "Universal basic income should be implemented immediately so its effects can be properly studied." },
+    ],
+    correct: "C",
+    explanation: "The passage does not take a side — it argues both sides are overconfident given the limited evidence from small pilots."
+  },
+  {
+    id: 81, type: "Assumption", difficulty: "Hard",
+    stimulus: "Self-driving cars will make roads safer because they eliminate human error, which is responsible for over 90% of traffic accidents.",
+    question: "Which of the following is an assumption the argument requires?",
+    choices: [
+      { label: "A", text: "Self-driving cars are already available for purchase by the general public." },
+      { label: "B", text: "Self-driving car technology will not introduce new categories of error that cause accidents at rates comparable to human error." },
+      { label: "C", text: "Human drivers will voluntarily switch to self-driving cars once they are available." },
+      { label: "D", text: "Traffic accidents are the leading cause of preventable death." },
+      { label: "E", text: "Insurance companies will lower premiums for self-driving car owners." },
+    ],
+    correct: "B",
+    explanation: "Eliminating human error only makes roads safer if the replacement technology does not create new errors — the argument assumes self-driving systems will not generate comparable accident rates."
+  },
+  {
+    id: 82, type: "Strengthen", difficulty: "Medium",
+    stimulus: "A historian argues that the printing press was the most important factor in causing the Protestant Reformation.",
+    question: "Which of the following most strengthens this argument?",
+    choices: [
+      { label: "A", text: "Martin Luther was an educated monk with access to scholarly texts before the printing press became widespread." },
+      { label: "B", text: "Previous reform movements failed to gain lasting traction precisely because their ideas could not be rapidly disseminated, whereas Luther's theses spread across Europe within weeks due to print." },
+      { label: "C", text: "The printing press was invented approximately 60 years before the Reformation began." },
+      { label: "D", text: "The Catholic Church attempted to suppress printed critiques of its practices." },
+      { label: "E", text: "The Reformation produced significant political as well as religious changes across Europe." },
+    ],
+    correct: "B",
+    explanation: "B directly contrasts the failure of earlier reform movements without print and Luther's success with print, providing causal evidence that the printing press was the decisive differentiating factor."
+  },
+  {
+    id: 83, type: "Resolve the Paradox", difficulty: "Hard",
+    stimulus: "A company implemented a four-day work week, reducing total work hours by 20%. Six months later, productivity per hour increased by 25%, but total output declined.",
+    question: "Which of the following best explains both findings simultaneously?",
+    choices: [
+      { label: "A", text: "Employees were happier with the four-day work week." },
+      { label: "B", text: "Employees worked more efficiently during the shorter hours but produced less total work because the efficiency gain did not fully compensate for the lost hours." },
+      { label: "C", text: "The company hired additional part-time workers to compensate for the reduced hours." },
+      { label: "D", text: "Some employees used their extra day off to pursue freelance work for competitors." },
+      { label: "E", text: "Productivity measurements are inherently unreliable over short periods." },
+    ],
+    correct: "B",
+    explanation: "B explains both: efficiency per hour rose but total output fell because fewer hours times higher efficiency still produced less total work than before."
+  },
+  {
+    id: 84, type: "Flaw", difficulty: "Easy",
+    stimulus: "You should take dietary advice from Dr. Patel. After all, she has been a practicing physician for 30 years.",
+    question: "Which of the following identifies the most significant flaw in this argument?",
+    choices: [
+      { label: "A", text: "It assumes that years of experience are unrelated to medical expertise." },
+      { label: "B", text: "It relies on an appeal to authority without establishing that Dr. Patel has specific expertise in nutrition and dietary advice." },
+      { label: "C", text: "It fails to consider whether Dr. Patel's patients have followed her advice successfully." },
+      { label: "D", text: "It assumes that all practicing physicians give the same dietary advice." },
+      { label: "E", text: "It does not provide evidence that the person seeking advice has a dietary problem." },
+    ],
+    correct: "B",
+    explanation: "Being a physician for 30 years does not make someone an expert in nutrition specifically — the appeal to authority is flawed because it is not established in the relevant domain."
+  },
+  {
+    id: 85, type: "Inference", difficulty: "Hard",
+    stimulus: "A country's constitution requires a two-thirds majority in parliament to amend any constitutional provision. The current ruling coalition controls exactly 60% of parliamentary seats. The opposition has stated it will not support any constitutional amendments proposed by the current government.",
+    question: "Which of the following can be properly inferred?",
+    choices: [
+      { label: "A", text: "The current government will be unable to pass any legislation." },
+      { label: "B", text: "The constitution will remain unchanged as long as the current opposition maintains its position." },
+      { label: "C", text: "The ruling coalition will lose the next election." },
+      { label: "D", text: "The opposition controls the remaining 40% of parliamentary seats." },
+      { label: "E", text: "Constitutional amendments are impossible in this country." },
+    ],
+    correct: "B",
+    explanation: "The government has 60%, needs 67%, and the opposition will not support amendments — so no amendment can pass while this stance holds."
+  },
+  {
+    id: 86, type: "Weaken", difficulty: "Medium",
+    stimulus: "Organic food sales have grown 300% over the past decade while rates of several chronic diseases have continued to rise. Therefore, eating organic food does not protect against chronic disease.",
+    question: "Which of the following most weakens this argument?",
+    choices: [
+      { label: "A", text: "Organic food is generally more expensive than conventionally grown food." },
+      { label: "B", text: "Despite growth in organic food sales, organic food still represents a small fraction of total food consumption, and the people eating it may be too few to affect population-level disease rates." },
+      { label: "C", text: "Chronic diseases have many causes beyond diet, including genetics and exercise habits." },
+      { label: "D", text: "Organic food sales have grown fastest in urban areas." },
+      { label: "E", text: "Some studies show that organic produce contains higher levels of certain nutrients." },
+    ],
+    correct: "B",
+    explanation: "If organic food is still a small percentage of total consumption, population-level disease rates would be unaffected even if organic food does protect its consumers."
+  },
+  {
+    id: 87, type: "Method of Reasoning", difficulty: "Hard",
+    stimulus: "Economist: My colleague argues we should cut corporate taxes to stimulate investment. But her previous research concluded that tax cuts primarily benefit shareholders rather than workers or the broader economy. She cannot now argue that cutting taxes benefits the broader economy without contradicting her own published work.",
+    question: "The economist's argument proceeds by:",
+    choices: [
+      { label: "A", text: "Providing new data that disproves the colleague's current argument." },
+      { label: "B", text: "Showing that the colleague's current position is incompatible with conclusions she herself has previously published." },
+      { label: "C", text: "Appealing to a higher authority to resolve the disagreement." },
+      { label: "D", text: "Demonstrating that corporate tax cuts have historically failed to stimulate investment." },
+      { label: "E", text: "Questioning the methodology used in the colleague's current research." },
+    ],
+    correct: "B",
+    explanation: "The economist uses the colleague's own prior published conclusions to show her current argument contradicts her earlier work."
+  },
+  {
+    id: 88, type: "Must Be True", difficulty: "Hard",
+    stimulus: "All delegates who voted for Resolution 12 also voted for Resolution 15. None of the delegates who voted for Resolution 15 abstained from Resolution 18. Some delegates abstained from Resolution 18.",
+    question: "Which of the following must be true?",
+    choices: [
+      { label: "A", text: "Some delegates who voted for Resolution 12 abstained from Resolution 18." },
+      { label: "B", text: "Some delegates who abstained from Resolution 18 did not vote for Resolution 12." },
+      { label: "C", text: "All delegates who abstained from Resolution 18 voted for Resolution 12." },
+      { label: "D", text: "No delegates voted for both Resolution 12 and Resolution 15." },
+      { label: "E", text: "Some delegates who voted for Resolution 15 abstained from Resolution 18." },
+    ],
+    correct: "B",
+    explanation: "Voted for R12 means voted for R15 means did not abstain from R18. So anyone who abstained from R18 did not vote for R12. Since some abstained, some who abstained did not vote for R12. B must be true."
+  },
+  {
+    id: 89, type: "Strengthen", difficulty: "Easy",
+    stimulus: "Scientists believe an asteroid impact 66 million years ago caused the mass extinction of the dinosaurs.",
+    question: "Which of the following most strengthens this hypothesis?",
+    choices: [
+      { label: "A", text: "Dinosaurs were already in decline before the asteroid impact." },
+      { label: "B", text: "A thin layer of iridium — rare on Earth but common in asteroids — has been found worldwide in rock strata dating to exactly 66 million years ago, precisely at the boundary between dinosaur-bearing and dinosaur-free fossils." },
+      { label: "C", text: "Several other mass extinction events have occurred throughout Earth's history." },
+      { label: "D", text: "Some dinosaur species may have survived the initial impact for thousands of years." },
+      { label: "E", text: "The asteroid impact would have been visible from anywhere on Earth." },
+    ],
+    correct: "B",
+    explanation: "The global iridium layer provides direct physical evidence of a worldwide asteroid impact event coinciding precisely with dinosaur extinction."
+  },
+  {
+    id: 90, type: "Flaw", difficulty: "Hard",
+    stimulus: "Professor Okafor's research on climate policy should be dismissed. She receives funding from a renewable energy company, which means her conclusions are designed to benefit her funders rather than reflect scientific truth.",
+    question: "The argument is most seriously flawed because it:",
+    choices: [
+      { label: "A", text: "Fails to identify which specific conclusions of Professor Okafor are incorrect." },
+      { label: "B", text: "Assumes that funding sources always determine research conclusions, without examining the actual research for errors or bias." },
+      { label: "C", text: "Ignores the possibility that renewable energy companies have a legitimate interest in accurate climate research." },
+      { label: "D", text: "Overstates the influence that any single researcher has on climate policy." },
+      { label: "E", text: "Fails to consider whether other climate researchers have similar funding conflicts." },
+    ],
+    correct: "B",
+    explanation: "This is a genetic fallacy — dismissing research based on its origin rather than its content. Funding creates a potential conflict of interest but does not prove the research is wrong."
+  },
+  {
+    id: 91, type: "Evaluate", difficulty: "Easy",
+    stimulus: "A restaurant owner claims that adding a valet parking service caused a 40% increase in dinner reservations over three months.",
+    question: "Which of the following would be most useful in evaluating this claim?",
+    choices: [
+      { label: "A", text: "How much the valet parking service costs per night to operate." },
+      { label: "B", text: "Whether other factors — such as a new menu, increased marketing, or seasonal trends — could account for the increase in reservations." },
+      { label: "C", text: "How many parking spots are available near the restaurant." },
+      { label: "D", text: "Whether customers tip the valet attendants." },
+      { label: "E", text: "What percentage of customers arrive by car versus public transit." },
+    ],
+    correct: "B",
+    explanation: "The key question is whether valet parking caused the increase or whether other factors explain it — without ruling out alternative causes, the claim cannot be accepted."
+  },
+  {
+    id: 92, type: "Principle", difficulty: "Hard",
+    stimulus: "In competitive sports, a player should be disqualified for unsportsmanlike conduct only if the conduct provided a clear competitive advantage and was intentional.",
+    question: "Which of the following situations calls for disqualification under this principle?",
+    choices: [
+      { label: "A", text: "A tennis player accidentally hits a ball that strikes an opponent, causing distraction." },
+      { label: "B", text: "A basketball player intentionally shouts to distract an opponent during a free throw, successfully causing the opponent to miss." },
+      { label: "C", text: "A swimmer's goggles accidentally fall off during a race, slowing her down." },
+      { label: "D", text: "A soccer player intentionally celebrates a goal exuberantly in a way that the opposing team finds disrespectful, but that provides no competitive advantage." },
+      { label: "E", text: "A marathon runner unintentionally elbows a competitor while repositioning, causing no advantage to either runner." },
+    ],
+    correct: "B",
+    explanation: "Only B meets both conditions: the shouting was intentional AND provided a clear competitive advantage by causing the opponent to miss."
+  },
+  {
+    id: 93, type: "Weaken", difficulty: "Medium",
+    stimulus: "Studies show that people who own pets have lower blood pressure on average than people who do not own pets. Therefore, owning a pet reduces blood pressure.",
+    question: "Which of the following most weakens this conclusion?",
+    choices: [
+      { label: "A", text: "People with high blood pressure may be advised by doctors not to own pets due to the stress of pet care." },
+      { label: "B", text: "Cat owners show similar blood pressure benefits to dog owners." },
+      { label: "C", text: "The study measured blood pressure at home, where people are generally more relaxed." },
+      { label: "D", text: "Some pet owners report that caring for pets can be stressful." },
+      { label: "E", text: "Blood pressure can be reduced through diet and exercise as well as pet ownership." },
+    ],
+    correct: "A",
+    explanation: "If high blood pressure patients are advised against owning pets, the pet-owner group would naturally have lower blood pressure — not because pets reduce blood pressure, but because the high-BP group is excluded."
+  },
+  {
+    id: 94, type: "Assumption", difficulty: "Medium",
+    stimulus: "The downtown arts district generates millions in tax revenue and attracts tourists. Defunding the arts district's public programs would therefore damage the city's economy.",
+    question: "Which of the following is an assumption the argument requires?",
+    choices: [
+      { label: "A", text: "The arts district is the most popular tourist destination in the city." },
+      { label: "B", text: "The public programs are at least partly responsible for the arts district's economic success, such that removing them would reduce that success." },
+      { label: "C", text: "Tax revenue from the arts district exceeds the cost of its public programs." },
+      { label: "D", text: "Tourists spend more money in arts districts than in other parts of cities." },
+      { label: "E", text: "Other cities with arts districts have also experienced economic benefits." },
+    ],
+    correct: "B",
+    explanation: "The argument assumes the public programs drive the economic activity — if the district would thrive without them, defunding would have no economic impact."
+  },
+  {
+    id: 95, type: "Must Be True", difficulty: "Easy",
+    stimulus: "Every student who completed the internship program received academic credit. Some students who received academic credit graduated with honors. All students who graduated with honors were offered jobs before graduation.",
+    question: "Which of the following must be true?",
+    choices: [
+      { label: "A", text: "Every student who completed the internship program graduated with honors." },
+      { label: "B", text: "Some students who completed the internship program were offered jobs before graduation." },
+      { label: "C", text: "All students who received academic credit were offered jobs before graduation." },
+      { label: "D", text: "Some students who received academic credit were offered jobs before graduation." },
+      { label: "E", text: "Only students who completed the internship program graduated with honors." },
+    ],
+    correct: "D",
+    explanation: "Some students with academic credit graduated with honors, and those students were offered jobs before graduation. So some students with academic credit were offered jobs. D must be true."
+  },
+  {
+    id: 96, type: "Resolve the Paradox", difficulty: "Easy",
+    stimulus: "A city built a new highway bypass intended to reduce traffic in the city center. However, three years later, traffic in the city center is worse than before the bypass was built.",
+    question: "Which of the following best explains this paradox?",
+    choices: [
+      { label: "A", text: "The bypass was more expensive to build than originally estimated." },
+      { label: "B", text: "The existence of the bypass made driving more convenient overall, attracting more people to drive into the city, increasing total traffic volume beyond what the bypass could divert." },
+      { label: "C", text: "Public transit ridership decreased after the bypass was built." },
+      { label: "D", text: "The bypass passes through a previously undeveloped area." },
+      { label: "E", text: "Construction of the bypass caused temporary traffic disruptions." },
+    ],
+    correct: "B",
+    explanation: "Induced demand — new road capacity encourages more driving overall, potentially increasing congestion rather than relieving it."
+  },
+  {
+    id: 97, type: "Flaw", difficulty: "Medium",
+    stimulus: "We cannot trust the results of this drug trial because one of the researchers who conducted it later went to work for the pharmaceutical company that makes the drug.",
+    question: "The argument is most seriously flawed because it:",
+    choices: [
+      { label: "A", text: "Assumes that all pharmaceutical companies engage in unethical research practices." },
+      { label: "B", text: "Uses a subsequent event to imply bias that may not have existed at the time the research was conducted, without examining the research itself for errors." },
+      { label: "C", text: "Fails to identify which specific results of the drug trial are questionable." },
+      { label: "D", text: "Ignores the peer review process that drug trial results typically undergo." },
+      { label: "E", text: "Overgeneralizes from one researcher's career move to all researchers involved in the trial." },
+    ],
+    correct: "B",
+    explanation: "The researcher's later employment does not prove bias existed during the trial — the argument should engage with the research itself rather than dismissing it based on subsequent events."
+  },
+  {
+    id: 98, type: "Main Point", difficulty: "Medium",
+    stimulus: "Some urban planners advocate eliminating minimum parking requirements near transit hubs to reduce car use. While reducing car infrastructure near transit makes sense in theory, evidence from cities that have eliminated minimums shows mixed results — developers often build what the market demands anyway, regardless of requirements.",
+    question: "The main point of the passage is that:",
+    choices: [
+      { label: "A", text: "Minimum parking requirements should be maintained in all urban areas." },
+      { label: "B", text: "Eliminating parking minimums near transit hubs may not achieve intended reductions in car use because market forces may still produce similar amounts of parking." },
+      { label: "C", text: "Urban planners are wrong to focus on transit ridership as a policy goal." },
+      { label: "D", text: "Developers always build more parking than minimum requirements demand." },
+      { label: "E", text: "Transit ridership is primarily determined by parking availability." },
+    ],
+    correct: "B",
+    explanation: "The passage acknowledges the logic of the policy but argues evidence shows it may not work because market demand for parking persists regardless of requirements."
+  },
+  {
+    id: 99, type: "Strengthen", difficulty: "Hard",
+    stimulus: "A public health official argues that mandatory vaccination policies are more effective than voluntary campaigns at achieving herd immunity for highly contagious diseases.",
+    question: "Which of the following most strengthens this argument?",
+    choices: [
+      { label: "A", text: "Herd immunity for measles requires approximately 95% of the population to be vaccinated." },
+      { label: "B", text: "In countries that have implemented mandatory vaccination for measles, vaccination rates consistently exceed 95%, while countries relying on voluntary campaigns rarely surpass 85%." },
+      { label: "C", text: "Some individuals cannot be vaccinated due to medical conditions and depend on herd immunity for protection." },
+      { label: "D", text: "Voluntary vaccination campaigns are less expensive to implement than mandatory programs." },
+      { label: "E", text: "Public trust in vaccines has declined in several countries over the past decade." },
+    ],
+    correct: "B",
+    explanation: "B provides direct comparative evidence showing mandatory policies achieve the threshold needed for herd immunity while voluntary campaigns consistently fall short."
+  },
+  {
+    id: 100, type: "Inference", difficulty: "Medium",
+    stimulus: "All of the apartments in the Crestview complex were built before 1980. No apartment built before 1980 is compliant with current energy efficiency codes. The landlord recently advertised three units in the complex as fully code-compliant.",
+    question: "If the statements above are all true, which of the following must also be true?",
+    choices: [
+      { label: "A", text: "The landlord is lying about all three units being code-compliant." },
+      { label: "B", text: "The three advertised units cannot be both in the Crestview complex and fully code-compliant." },
+      { label: "C", text: "The landlord should be fined for false advertising." },
+      { label: "D", text: "Energy efficiency codes have become stricter since 1980." },
+      { label: "E", text: "The Crestview complex will need to be demolished to meet current codes." },
+    ],
+    correct: "B",
+    explanation: "All Crestview apartments were built before 1980, and no pre-1980 apartment is code-compliant. So the three units cannot be both in Crestview and fully code-compliant. B must be true."
+  },
 ];
 
 const QUESTION_TYPES = ["All", ...Array.from(new Set(ALL_QUESTIONS.map(q => q.type)))];
@@ -633,12 +1614,10 @@ function DrillScreen({ drillState, setDrillState, onFinish, onHome }) {
       });
     }, 1000);
     return () => clearInterval(timerRef.current);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index, timerSeconds]);
 
   useEffect(() => {
     if (submitted) clearInterval(timerRef.current);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [submitted]);
 
   useEffect(() => {
